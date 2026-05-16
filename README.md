@@ -83,7 +83,7 @@
 
 **cURL**
 ```bash
-curl -X GET "https://rnote.dev/api/v1/crawler/note/image?note_id=NOTE_ID" \
+curl -X GET "https://rnote.dev/api/v2/crawler/note/image?note_id=NOTE_ID" \
   -H "X-API-Key: YOUR_API_KEY"
 ```
 
@@ -92,7 +92,7 @@ curl -X GET "https://rnote.dev/api/v1/crawler/note/image?note_id=NOTE_ID" \
 import requests
 
 resp = requests.get(
-    "https://rnote.dev/api/v1/crawler/note/image",
+    "https://rnote.dev/api/v2/crawler/note/image",
     params={"note_id": "NOTE_ID"},
     headers={"X-API-Key": "YOUR_API_KEY"},
 )
@@ -102,7 +102,7 @@ print(resp.json())
 **JavaScript**
 ```javascript
 const resp = await fetch(
-  "https://rnote.dev/api/v1/crawler/note/image?note_id=NOTE_ID",
+  "https://rnote.dev/api/v2/crawler/note/image?note_id=NOTE_ID",
   { headers: { "X-API-Key": "YOUR_API_KEY" } }
 );
 const data = await resp.json();
